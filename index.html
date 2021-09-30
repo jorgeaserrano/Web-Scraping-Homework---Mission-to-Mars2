@@ -13,105 +13,81 @@
   <!--"{{ url_for('static', filename='style.css') }}"-->
 </head> 
 
-<body>
-  <div class="container">
-    <div class="jumbotron bg-dark text-warning text-center">
-      <h1>Mission to Mars</h1>
-      <p>The Most Updated Information about Mars</p>
-      <p><a class="btn btn-warning btn-lg" href="/scrape" role="button">Scrape New Data</a></p>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-          <div class="box border bg-light border-dark rounded m-2 p-0">
-            <div class="h3 bg-dark text-warning p-2">
-              <i class="fas fa-rss-square"></i> Latest Mars News:
-            </div>
-            <div class="h3 pl-2">Mars Is Getting a New Robotic Meteorologist:</div>
-            <div class="p ml-2 pb-2">Sensors on NASA's Perseverance will help prepare for future human exploration by taking weather measurements and studying dust particles.</div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-            <div class="box border bg-light border-dark rounded m-2 p-0">
-              <div class="h3 bg-dark text-warning p-2">
-                <i class="fas fa-rss-square"></i>  Mars Space Image
-              </div>
-              <img class="img-fluid img-thumbnail rounded-lg" src=https://spaceimages-mars.com/image/featured/mars1.jpg alt="featured image">
-              <div class="p">
-              </div>
-            </div>
-        </div>
-    </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-            <div class="box border bg-light border-dark rounded m-2 p-0">
-              <div class="h3 bg-dark text-warning p-2">
-                <i class="fas fa-rss-square"></i>  Mars Facts
-        </div>
-      
-        <div class="col-md-4">
-            <!-- Mars Facts -->
-            <div class="row" id="mars-facts">
-              <h4>Mars Facts</h4>
-                The Equatorial Diameter is 6,792 km,
-                The Polar Diameter is 6,752 km, 
-                Mass is 6.39 × 10^23 kg (0.11 Earths), 
-                There are 2 Moons - Phobos & Deimos. 
-                While the Orbit Distance is 227,943,824 km (1.38 AU), 
-                the Orbit Period is 687 days (1.9 years). Lastly, the 
-                Surface Temperature is -87 to -5°C' and it was First 
-                Recorded in the 2nd millennium BC by Egyptian Astronomers.
-            </div>
-          </div>
-        </div>  
-    </div>
-  </div>
-  <div class="row" id="mars-hemispheres">
-    <div class="page-header">
-        <h2 class="text-center">Mars Hemispheres</h2>
-    </div>
-      </div>      
-      <div class="row">
-        <div class="col-md-3">        
-            <div class="thumbnail">
-            Cerberus Hemisphere Enhanced
-          </div>
-          <img src='https://marshemispheres.com/images/f5e372a36edfa389625da6d0cc25d905_cerberus_enhanced.tif_full.jpg' class="rounded" width=100%>
-        </div>
-      </div> 
-    </div>      
-    <div class="row">
-        <div class="col-md-3">        
-            <div class="thumbnail">    
-            Schiaparelli Hemisphere Enhanced
-        </div>
-        <img src='https://marshemispheres.com/images/3778f7b43bbbc89d6e3cfabb3613ba93_schiaparelli_enhanced.tif_full.jpg' class="rounded" width=100%>
-      </div>
-    </div> 
-    <div class="row">
-        <div class="col-md-3">        
-            <div class="thumbnail">
-            Syrtis Major Hemisphere Enhanced
-          </div>
-          <img src='https://marshemispheres.com/images/555e6403a6ddd7ba16ddb0e471cadcf7_syrtis_major_enhanced.tif_full.jpg' class="rounded" width=100%>
-        </div>
-      </div> 
-      <div class="row">
-        <div class="col-md-3">        
-            <div class="thumbnail">
-            Valles Marineris Hemisphere Enhanced
-          </div>
-          <img src='https://marshemispheres.com/images/b3c7c6c9138f57b4756be9b9c43e3a48_valles_marineris_enhanced.tif_full.jpg' class="rounded" width=100%>
-        </div>
-      </div> 
-    </div>
-  </div>
-</div> 
-</body>
+<!DOCTYPE html>
+<html lang="en">
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mars Scrape</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/minty/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <body class="text-white, text-center" style="background-color:black;">
+        <div class="container">
+
+    <div class="container-fluid">
+        <div class="jumbotron text-center" style="background-image: url(http://pages.erau.edu/~andrewsa/sci_fi_projects_spring_2019/Project_3/Ferree_Andrew/Project3SiteSubmission/mars.jpg); background-size: 100%; height: 10%;">
+            <h1 class="display-4">Mission to Mars</h1>
+            <a class="btn btn-lg text-white" style="background-color:gray;" href="/scrape" role="button">Get New Data</a>
+        </div>
+    </div>
+    <hr style="border-width: 0px">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="text-align: center; color: white">Read the Latest Mars News</h1>
+                <h3 style="text-align: center; color: gray">{{ mars.news_title }}</h3>
+                <p style="text-align: center; color: rgb(241, 121, 8)">{{ mars.news_paragraph }}</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <h1 style="text-align: center; color: white">Featured Mars Image</h1>
+                <a href="{{mars.featured_image_url}}" target="_blank"><img style="width:100%" src="{{mars.featured_image_url}}"></a>
+            </div>
+            <div class="col-md-4">
+                <h1 style="text-align: center; color: white">Mars Facts</h1>
+                <div style="max-width: 450px; max-height: 150px; font-size: 10px; margin-bottom: 25px;"></div>
+                <div>{{ mars.mars_facts|safe }}</div>
+            </div>
+        </div>
+        <hr style="border-width:0px;color:rgb(241, 121, 8);">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 style="padding-top: 1px; margin-top: 1px; text-align: center; color: white">Mars Hemispheres</h1>
+                <hr style="border-width:0px;color:rgb(241, 121, 8)">
+            </div>
+        </div>
+
+        <div class="col-md-12">
+        <div class="row">
+            {% for hemi in mars.hemispheres[0:2] %}
+            <div class="col-md-6">
+                <div class="card text-white bg-dark" style="margin: 10px;"></div>
+                <h3>{{hemi.title}}</h3>
+                <a href="{{hemi.img_url}}" target="_blank"><img style="width:50%" src="{{hemi.img_url}}"></a>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="col-md-12">
+        <div class="row">
+            {% for hemi in mars.hemispheres[2:4] %}
+            <div class="col-md-6">
+                <div class="card text-white bg-dark" style="margin: 30px;"></div>
+                <h3>{{hemi.title}}</h3>
+                <a href="{{hemi.img_url}}" target="_blank"><img style="width:50%" src="{{hemi.img_url}}"></a>
+            </div>
+            {% endfor %}
+        </div>
+
+    </div>
+    
+</body>
 
 </html>
